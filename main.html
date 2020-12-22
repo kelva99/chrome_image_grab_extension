@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<h1>Welcome to Image Grab</h1>
+    <!--<link rel="stylesheet" href="main.css">-->
+    <style>
+      body{
+        width: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Click the button below to download all images greater than 80 * 80 pixels or specify it below.</p>
+    
+    <form>
+      <label>Size:</label>
+
+      <input type="text" id="width_input" placeholder="width" size="6">
+      <label> pixels x </label>
+      <input type="text" id="height_input" placeholder="height" size="6">
+      <label> pixels</label>
+      <!--<input type="submit" value="Download All" id="download2">-->
+    </form>
+    <br>
+      <p id="message"></p>
+    <br>
+    <button id="download">Download all</button>
+    <script src="run.js"></script>
+  </body>
+  
+</html>
