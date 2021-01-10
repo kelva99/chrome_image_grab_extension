@@ -12,22 +12,27 @@
   </head>
 
   <body>
-    <p>Click the button below to download all images greater than 80 * 80 pixels or specify it below.</p>
+    <p>Click the button below to download all images on the page.</p>
     
     <form>
       <label>Size:</label>
 
-      <input type="text" id="width_input" placeholder="width" size="6">
+      <input type="text" id="width_input" placeholder="width (80)" size="6">
       <label> pixels x </label>
-      <input type="text" id="height_input" placeholder="height" size="6">
+      <input type="text" id="height_input" placeholder="height (80)" size="6">
       <label> pixels</label>
+      <br><br>
+      <input type="checkbox" id="dl_original">
+      <label for="dl_original">Download Original</label><br>
       <!--<input type="submit" value="Download All" id="download2">-->
     </form>
+
     <br>
       <p id="message"></p>
     <br>
+
     <button id="download">Download all</button>
-    <script src="run.js"></script>
+    <script src="background.js"></script>
   </body>
   
 </html>

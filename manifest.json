@@ -3,7 +3,13 @@
   "description" : "Help downloading photos from the website",
   "version": "0.1",
   "manifest_version": 2, // 3
-  "permissions": ["storage",  "tabs"],
+  "permissions": ["storage",  
+                  "activeTab", 
+                  "downloads"
+                ],
+  "web_accessible_resources" : [
+  "images/*.jpg"
+  ],
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
